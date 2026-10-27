@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartFlow - Smart Traffic Signals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🚦 SmartFlow</h1>
+        <p>Adaptive Traffic Signal Management System</p>
+    </header>
+
+    <main>
+        <h2>Welcome to SmartFlow</h2>
+        <p>Smarter signals, smoother traffic, cleaner cities.</p>
+
+        <button id="startBtn">Start Traffic Simulation</button>
+
+        
+        <p id="status">Traffic simulation is not started.</p>
+
+<section class="traffic-input">
+    <h2>🚦 Traffic Density Monitor</h2>
+    <p>Enter the number of waiting vehicles on each road.</p>
+
+    <div class="road-inputs">
+        <div class="road-field">
+            <label for="north">North Road</label>
+            <input type="number" id="north" min="0" value="20">
+        </div>
+
+        <div class="road-field">
+            <label for="south">South Road</label>
+            <input type="number" id="south" min="0" value="10">
+        </div>
+
+        <div class="road-field">
+            <label for="east">East Road</label>
+            <input type="number" id="east" min="0" value="35">
+        </div>
+
+        <div class="road-field">
+            <label for="west">West Road</label>
+            <input type="number" id="west" min="0" value="15">
+        </div>
+    </div>
+</section>
+<button id="analyzeBtn">Analyze Traffic</button>
+
+<div id="result"></div>
+<p id="countdown"></p>
+<h2>Live Traffic Signals</h2>
+
+<div class="signals">
+    <div class="signal-card">
+        <h3>North</h3>
+        <div class="traffic-light" id="light-north">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+        </div>
+        <p id="status-north">Waiting</p>
+    </div>
+
+    <div class="signal-card">
+        <h3>South</h3>
+        <div class="traffic-light" id="light-south">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+        </div>
+        <p id="status-south">Waiting</p>
+    </div>
+
+    <div class="signal-card">
+        <h3>East</h3>
+        <div class="traffic-light" id="light-east">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+        </div>
+        <p id="status-east">Waiting</p>
+    </div>
+
+    <div class="signal-card">
+        <h3>West</h3>
+        <div class="traffic-light" id="light-west">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+        </div>
+        <p id="status-west">Waiting</p>
+    </div>
+</div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

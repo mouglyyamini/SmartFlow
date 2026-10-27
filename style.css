@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    color: #1e293b;
+}
+
+header {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #cbd5e1;
+}
+
+main {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px #cbd5e1;
+}
+
+main h2 {
+    color: #0f766e;
+    margin-bottom: 15px;
+}
+
+main p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+button {
+    background: #0f766e;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #115e59;
+}
+
+#status {
+    margin-top: 25px;
+    font-weight: bold;
+}
+.signals {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.signal-card {
+    background: #f1f5f9;
+    padding: 15px 8px;
+    border-radius: 12px;
+}
+
+.traffic-light {
+    background: #1e293b;
+    width: 48px;
+    padding: 8px;
+    margin: 12px auto;
+    border-radius: 20px;
+}
+
+.traffic-light span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 5px 0;
+    border-radius: 50%;
+    background: #475569;
+}
+
+.traffic-light .red.active {
+    background: #ef4444;
+    box-shadow: 0 0 12px #ef4444;
+}
+
+.traffic-light .yellow.active {
+    background: #facc15;
+    box-shadow: 0 0 12px #facc15;
+}
+
+.traffic-light .green.active {
+    background: #22c55e;
+    box-shadow: 0 0 12px #22c55e;
+}
+
+@media (max-width: 600px) {
+    .signals {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
